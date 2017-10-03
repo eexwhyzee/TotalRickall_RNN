@@ -1,1 +1,0 @@
-Character RNN with Keras 
