@@ -1,1 +1,2 @@
-Character RNN with Keras 
+# Character RNN with Keras 
+-------------------------
