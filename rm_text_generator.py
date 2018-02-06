@@ -1,14 +1,14 @@
 from utils import *
 from model import *
 
-#open text file with raw transcript, create dict for chars
+# Open text file with raw transcript, create dict for chars
 content, chars, char_dict, int_dict = load_data(DATA_PATH)
 
 
-# remove redundant sequences 
+# Remove redundant sequences
 sentences, next_chars = remove_seq(content, SEQ_LENGTH)
 
-# vectorization of sentences 
+# Vectorization of sentences
 
 d_X, d_Y = sent2vec(sentences, SEQ_LENGTH, chars, char_dict, next_chars)
 
