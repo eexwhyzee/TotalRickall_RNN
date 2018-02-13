@@ -22,7 +22,7 @@ git clone https://github.com/eexwhyzee/TotalRickall_RNN.git
 cd TotalRickall_RNN/
 ```
 
-If you would like to train a model from scratch, you can run the `rm_text_generator.py` script with the argument `-training_mode` set to `TRUE` along with the number of training iterations using the `-iterations` argument (default is `50`). After each training iteration, a sample text will be outputted in your terminal with varying temperatures (`0.2, 0.5, 1.0, 1.2`).
+If you would like to train a model from scratch, you can run the `rm_text_generator.py` script with the argument `-training_mode` set to `TRUE` and the `-data_path` argument set to path of your text data you would like to train with. In addition, you can set the number of training iterations using the `-iterations` argument (default is `50`). After each training iteration, a sample text will be outputted in your terminal with varying temperatures (`0.2, 0.5, 1.0, 1.2`).
 
 Otherwise, if you would like to start generating text right away with the trained model weights that I've included in this repo (trained on gcloud compute engine with Nvidia Tesla K80 GPU for 73 epochs), just run the `rm_text_generator.py` script with the path of the trained model weights and the length of text (`-text_length`) you wish to be generated (default is `500`):
 
